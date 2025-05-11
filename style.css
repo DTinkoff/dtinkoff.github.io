@@ -262,3 +262,43 @@ footer {
     transform: scale(1.1); 
     opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .technologies, .advantages {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 3em;
+    }
+
+    .section-heading {
+        font-size: 1.2em;
+        padding: 0.8em;
+    }
+
+    .card {
+        padding: 1em;
+    }
+}
