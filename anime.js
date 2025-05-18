@@ -95,3 +95,5 @@ socialContainer.innerHTML = `
         </div>
     `).join('')}
 `;
+
+document.querySelector('.logo img').style.transform = 'rotateY(360deg)';

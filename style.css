@@ -152,6 +152,7 @@ header {
     justify-content: space-between;
 }
 
+
 .technologies .card .content img {
     width: 100%;
     border-radius: 1em;
@@ -174,8 +175,14 @@ header {
     cursor: pointer;
     text-decoration: underline;
     font-weight: 600;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform-style: preserve-3d;
 }
-
+.btn-learnmore:active {
+    transform: translateY(4px) translateZ(-5px); 
+    box-shadow: 0 2px 0 rgba(118, 58, 11, 0.5);
+  }
 .btn-learnmore img {
     width: 1.2em;
     height: 1em;
@@ -302,3 +309,22 @@ footer {
         padding: 1em;
     }
 }
+
+.logo img {
+    transition: transform 1s ease;
+  }
+  
+  .logo:hover img {
+    transform: rotateY(180deg); 
+  }
+
+  .btn-learnmore {
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .btn-learnmore:active {
+    transform: translateY(4px) translateZ(-5px); /* Эффект нажатия */
+    box-shadow: 0 2px 0 rgba(118, 58, 11, 0.5); /* Тень "уменьшается" */
+  }
